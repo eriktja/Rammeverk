@@ -1,42 +1,29 @@
-package Engine;
-
-import org.lwjgl.*;
-import org.lwjgl.glfw.*;
-import org.lwjgl.opengl.*;
-import org.lwjgl.system.*;
-
-import java.nio.*;
-
-import static org.lwjgl.glfw.Callbacks.*;
-import static org.lwjgl.glfw.GLFW.*;
-import static org.lwjgl.opengl.GL11.*;
-import static org.lwjgl.system.MemoryStack.*;
-import static org.lwjgl.system.MemoryUtil.*;
+package Engine.Window;
 
 public class Window {
     // The window handler
     private long window;
-    int height, width;
-    String background;
+    private int height, width;
+    private String background;
 
-    protected void createWindow(){
+    public void createWindow(){
         new Window();
     }
 
-    protected void createWindow(int height, int width){
+    public void createWindow(int height, int width){
         new Window();
     }
 
-    protected void setFullscreen(){
+    public void setFullscreen(){
         // Set window to fullscreen
     }
 
-    protected void setSize(int height, int width){
+    public void setSize(int height, int width){
         this.height = height;
         this.width = width;
     }
 
-    protected void setBackground(String background){
+    public void setBackground(String background){
         this.background = background;
     }
 //    Code copied from LWJGL

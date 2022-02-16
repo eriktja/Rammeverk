@@ -1,5 +1,7 @@
 package Engine;
 
+import Engine.Window.Window;
+
 public class TheGameEngine {
     private Window window;
 
@@ -7,6 +9,7 @@ public class TheGameEngine {
         Window window = new Window();
     }
 
+    // Window methods
     public void createWindow(){
         window.createWindow();
     }
