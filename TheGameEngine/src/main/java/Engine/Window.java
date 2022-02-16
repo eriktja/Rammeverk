@@ -1,3 +1,5 @@
+package Engine;
+
 import org.lwjgl.*;
 import org.lwjgl.glfw.*;
 import org.lwjgl.opengl.*;
@@ -11,7 +13,7 @@ import static org.lwjgl.opengl.GL11.*;
 import static org.lwjgl.system.MemoryStack.*;
 import static org.lwjgl.system.MemoryUtil.*;
 
-public class HelloWorld {
+public class Window {
 
     // The window handle
     private long window;
@@ -93,7 +95,8 @@ public class HelloWorld {
         GL.createCapabilities();
 
         // Set the clear color
-        glClearColor(1.0f, 0.0f, 0.0f, 0.0f);
+        glClearColor(0.5f, 0.5f, 1.0f, 0.0f);
+        // (102, 255, 102)
 
         // Run the rendering loop until the user has attempted to close
         // the window or has pressed the ESCAPE key.
@@ -107,9 +110,4 @@ public class HelloWorld {
             glfwPollEvents();
         }
     }
-
-    public static void main(String[] args) {
-        new HelloWorld().run();
-    }
-
 }
