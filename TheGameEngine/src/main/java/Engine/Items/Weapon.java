@@ -26,4 +26,12 @@ public class Weapon extends Item{
     public void setAttackSpeed(int attackSpeed) {
         this.attackSpeed = attackSpeed;
     }
+
+    @Override
+    public void use(){
+        this.equip();
+    }
+
+    private void equip() {
+    }
 }

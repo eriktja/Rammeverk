@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe0c4638-e756-4c9c-b690-36aef2e1f317" name="Changes" comment="Refactored code">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Engine/Character/Character.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Engine/Items/Armor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Engine/Items/Consumable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Engine/Items/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Engine/Items/Weapon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Engine/TheGameEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Engine/TheGameEngine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Engine/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Engine/Window/Window.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+    <list default="true" id="fe0c4638-e756-4c9c-b690-36aef2e1f317" name="Changes" comment="Created Items and character">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Engine/Character/NonPlayerCharacter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Engine/Character/PlayerCharacter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Engine/Character/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Engine/Character/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Engine/Items/Armor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Engine/Items/Armor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Engine/Items/Consumable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Engine/Items/Consumable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Engine/Items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Engine/Items/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Engine/Items/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Engine/Items/Weapon.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +119,13 @@
       <option name="presentableId" value="LOCAL−00007" />
       <updated>1645023766910</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL−00008" summary="Created Items and character">
+      <created>1645026476669</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1645026476669</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -140,6 +145,7 @@
     <MESSAGE value="build-files" />
     <MESSAGE value="Hello world window" />
     <MESSAGE value="Refactored code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored code" />
+    <MESSAGE value="Created Items and character" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Items and character" />
   </component>
 </project>

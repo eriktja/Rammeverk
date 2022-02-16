@@ -26,4 +26,12 @@ public class Armor extends Item{
     public void setMovementSpeedReduction(int movementSpeedReduction) {
         this.movementSpeedReduction = movementSpeedReduction;
     }
+
+    @Override
+    public void use(){
+        this.equip();
+    }
+
+    private void equip() {
+    }
 }

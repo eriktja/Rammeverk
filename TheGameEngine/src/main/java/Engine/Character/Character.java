@@ -1,8 +1,13 @@
 package Engine.Character;
 
+import Engine.Items.Item;
+
+import java.util.ArrayList;
+
 public class Character {
     private int movementSpeed;
     private int healthPoints;
+    private ArrayList<Item> inventory = new ArrayList<>();
 
     public Character() {
     }
@@ -27,4 +32,15 @@ public class Character {
     public void setHealthPoints(int healthPoints) {
         this.healthPoints = healthPoints;
     }
+
+    public void addToInventory(Item item){
+        inventory.add(item);
+    }
+
+    public void useItem(Item item){
+        if(inventory.contains(item)){
+            item.use();
+        }
+    }
+
 }
