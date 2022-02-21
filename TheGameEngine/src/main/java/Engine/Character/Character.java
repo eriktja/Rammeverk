@@ -1,7 +1,5 @@
 package Engine.Character;
-
 import Engine.Items.Item;
-
 import java.util.ArrayList;
 
 public class Character {
