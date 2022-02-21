@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe0c4638-e756-4c9c-b690-36aef2e1f317" name="Changes" comment="created player character and non-player character">
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Engine/Character/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Engine/Character/Character.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Engine/Character/PlayerCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Engine/Character/PlayerCharacter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Engine/TheGameEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Engine/TheGameEngine.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +27,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="MenuTest" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitSEFilterConfiguration">
