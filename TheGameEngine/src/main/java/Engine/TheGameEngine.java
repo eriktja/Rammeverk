@@ -1,5 +1,6 @@
 package Engine;
 
+import Engine.Character.Character;
 import Engine.Window.Window;
 
 public class TheGameEngine {
@@ -28,5 +29,9 @@ public class TheGameEngine {
 
     public void setWindowBackground(String background){
         window.setBackground(background);
+    }
+
+    public Character createCharacter(int movementSpeed, int healthPoints){
+        return new Character(movementSpeed, healthPoints);
     }
 }

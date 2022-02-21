@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class Character {
     private int movementSpeed;
     private int healthPoints;
-    private ArrayList<Item> inventory = new ArrayList<>();
+    private ArrayList<Item> inventory = new ArrayList<>(); // Might move this to playerCharacter
 
     public Character() {
     }
@@ -42,5 +42,4 @@ public class Character {
             item.use();
         }
     }
-
 }

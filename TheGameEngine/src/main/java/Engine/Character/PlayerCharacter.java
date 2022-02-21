@@ -6,5 +6,6 @@ public class PlayerCharacter extends Character{
     public PlayerCharacter(int movementSpeed, int healthPoints) {
         super(movementSpeed, healthPoints);
     }
+
     public void setMovementControl(){}
 }
