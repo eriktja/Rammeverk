@@ -13,6 +13,13 @@ public class Button {
         return location;
     }
 
+    public void Start() {
+    }
+
+    public void Exit() {
+
+    }
+
     public void setLocation(String location) {
         this.location = location;
     }
