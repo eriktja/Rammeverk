@@ -5,6 +5,7 @@ public class PlayerCharacter extends Character{
     public String moveRight;
     public String attack;
     public String jump;
+    public String useConsumable;
 
     public PlayerCharacter(int movementSpeed, int healthPoints, int attackSpeed) {
         super(movementSpeed, healthPoints, attackSpeed);
@@ -25,5 +26,8 @@ public class PlayerCharacter extends Character{
     }
     public void setJumpButton(String button){
         jump = button;
+    }
+    public void setUseConsumable(String button) {
+        useConsumable = button;
     }
 }

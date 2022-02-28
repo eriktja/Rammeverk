@@ -1,5 +1,6 @@
 package Engine.Menu;
 
+import Engine.Button.Button;
 import Engine.Window.Window;
 
 import java.awt.*;
@@ -14,7 +15,7 @@ public class Menu {
     }
 
     // Ha egen klasse for button med innhold og lokasjon? overloade på typ run()/exit()?
-    public void addButton(Button button) {
+    public void addButton(Engine.Button.Button button) {
         buttons.add(button);
     }
 

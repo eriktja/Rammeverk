@@ -6,12 +6,11 @@ public class Window {
     private int height, width;
     private String background;
 
-    public void createWindow(){
-        new Window();
+    public Window(int height, int width){
+        this.height = height;
+        this.width = width;
     }
-
-    public void createWindow(int height, int width){
-        new Window();
+    public Window(){
     }
 
     public void setFullscreen(){

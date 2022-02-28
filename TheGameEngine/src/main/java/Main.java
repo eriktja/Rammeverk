@@ -1,15 +1,84 @@
+import Engine.Button.Button;
 import Engine.Character.Character;
 import Engine.Character.NonPlayerCharacter;
 import Engine.Character.PlayerCharacter;
+import Engine.HighScore.HighScore;
 import Engine.Items.Armor;
 import Engine.Items.Consumable;
 import Engine.Items.Item;
 import Engine.Items.Weapon;
+import Engine.Menu.Menu;
+import Engine.Obstacle.Obstacle;
 import Engine.Window.Window;
 
 public class Main {
     public static void main(String[] args) {
+        // Scenario 1
+        Window window = new Window();
+        window.setFullscreen();
+        window.setBackground("Background");
 
+        // Scenario 2
+        Window window1 = new Window(800, 600);
+        window1.setBackground("blue");
+
+        // Scenario 3
+        Menu menu = new Menu(window);
+        Button start = new Button("center", "Start Game");
+        Button quit = new Button("center","Quit");
+        menu.addButton(start);
+        menu.addButton(quit);
+
+        // Scenario 4
+        PlayerCharacter character = new PlayerCharacter();
+        character.setMovementSpeed(100);
+        character.setHealthPoints(100);
+        character.setAttackSpeed(1);
+        character.setMoveLeftButton("KeyEvent.VK_LEFT");
+        character.setMoveRightButton("KeyEvent.VK_RIGHT");
+        character.setAttackButton("KeyEvent.VK_SPACE");
+        character.setJumpButton("KeyEvent.VK_UP");
+
+        // Scenario 5
+        NonPlayerCharacter npc = new NonPlayerCharacter();
+        npc.setMovementSpeed(100);
+        npc.setHealthPoints(100);
+        npc.setMovementPattern(50);
+        npc.addToInventory(new Item("BIG FUCKING GUN 3000"));
+
+        // Scenario 6
+        Item rustyShortSword = new Weapon("Rusty short-sword", 9, 3);
+        Item wornLeatherBoots = new Armor("Worn Leather Boots", 10, 0);
+        Item tornPants = new Armor("Torn Pants", 0, 0);
+
+        character.addToInventory(rustyShortSword);
+        character.addToInventory(wornLeatherBoots);
+        character.addToInventory(tornPants);
+
+        // Scenario 7
+        character.setUseConsumable("KeyEvent.VK_E");
+        Item healthPotion = new Consumable("Health Potion", 1,50);
+        character.addToInventory(healthPotion);
+
+        // Scenario 8
+        npc.setHighScorePoints(10);
+
+        HighScore highScore = new HighScore();
+        highScore.setHighscore(npc.getHighScorePoints());
+
+        // Scenario 9
+        Obstacle lava = new Obstacle(15,10,20);
+        // Scenario 10
+
+        // Scenario 11
+
+        // Scenario 12
+
+        // Scenario 13
+
+        // Scenario 14
+
+/*
         Window window = new Window();
         window.createWindow();
         window.setFullscreen();
@@ -42,6 +111,6 @@ public class Main {
         playerCharacter.addToInventory(rustyShortSword);
         playerCharacter.addToInventory(wornLeatherBoots);
         playerCharacter.addToInventory(tornPants);
-
+*/
     }
 }
