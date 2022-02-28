@@ -1,11 +1,17 @@
 package Engine.Character;
 
 public class PlayerCharacter extends Character{
-    public int movementControl;
+    public String moveLeft;
+    public String moveRight;
+    public String attack;
+    public String jump;
 
     public PlayerCharacter(int movementSpeed, int healthPoints) {
         super(movementSpeed, healthPoints);
     }
 
-    public void setMovementControl(){}
+    public void setMoveLeftButton(String button){}
+    public void setMoveRightButton(String button){}
+    public void setAttackButton(String button){}
+    public void setJumpButton(String button){}
 }

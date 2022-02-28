@@ -38,6 +38,9 @@ public class Character {
     public void useItem(Item item){
         if(inventory.contains(item)){
             item.use();
+            inventory.remove(item);
         }
+        else
+            System.out.println("Item not in inventory");
     }
 }
