@@ -10,8 +10,20 @@ public class PlayerCharacter extends Character{
         super(movementSpeed, healthPoints, attackSpeed);
     }
 
-    public void setMoveLeftButton(String button){}
-    public void setMoveRightButton(String button){}
-    public void setAttackButton(String button){}
-    public void setJumpButton(String button){}
+    public PlayerCharacter() {
+
+    }
+
+    public void setMoveLeftButton(String button){
+        moveLeft = button;
+    }
+    public void setMoveRightButton(String button){
+        moveRight = button;
+    }
+    public void setAttackButton(String button){
+        attack = button;
+    }
+    public void setJumpButton(String button){
+        jump = button;
+    }
 }

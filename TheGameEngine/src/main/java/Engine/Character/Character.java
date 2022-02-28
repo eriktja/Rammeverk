@@ -17,6 +17,16 @@ public class Character {
         this.attackSpeed = attackSpeed;
     }
 
+    public int getAttackSpeed()
+    {
+        return attackSpeed;
+    }
+
+    public void setAttackSpeed(int attackSpeed)
+    {
+        this.attackSpeed = attackSpeed;
+    }
+
     public int getMovementSpeed() {
         return movementSpeed;
     }

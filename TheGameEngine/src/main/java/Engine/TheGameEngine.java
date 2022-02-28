@@ -31,7 +31,7 @@ public class TheGameEngine {
         window.setBackground(background);
     }
 
-    public Character createCharacter(int movementSpeed, int healthPoints){
-        return new Character(movementSpeed, healthPoints);
+    public Character createCharacter(int movementSpeed, int healthPoints, int attackSpeed){
+        return new Character(movementSpeed, healthPoints, attackSpeed);
     }
 }

@@ -7,5 +7,7 @@ public class NonPlayerCharacter extends Character{
         super(movementSpeed, healthPoints, attackSpeed);
     }
 
-    public void setMovementPattern(){}
+    public void setMovementPattern(int movementPattern){
+        this.movementPattern = movementPattern;
+    }
 }
