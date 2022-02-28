@@ -17,7 +17,6 @@ public class Button {
     }
 
     public void Exit() {
-
     }
 
     public void setLocation(String location) {

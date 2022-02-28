@@ -5,48 +5,43 @@ import Engine.Items.Armor;
 import Engine.Items.Consumable;
 import Engine.Items.Item;
 import Engine.Items.Weapon;
-import Engine.TheGameEngine;
 import Engine.Window.Window;
 
 public class Main {
     public static void main(String[] args) {
 
-        TheGameEngine app = new TheGameEngine();
-        app.createWindow();
-        app.setFullscreen();
-        app.setWindowBackground("bakgrunn.jpg");
-        app.setWindowSize(800,600);
-
         Window window = new Window();
+        window.createWindow();
+        window.setFullscreen();
+        window.setBackground("bakgrunn.jpg");
+        window.setSize(800,600);
 
-
-        Character player = app.createCharacter(1, 100, 1);
+        Character player = new PlayerCharacter(1, 100, 1);
         Item healthPot = new Consumable("Health potion", 50, 1);
         player.addToInventory(healthPot);
         player.useItem(healthPot);
 
-        PlayerCharacter character1 = new PlayerCharacter(1,2,3);
-        character1.setMovementSpeed (100);
-        character1.setHealthPoints (100);
-        character1.setAttackSpeed (1);
-        character1.setMoveLeftButton("KeyEvent.VK_LEFT");
-        character1.setMoveRightButton("KeyEvent.VK_RIGHT");
-        character1.setAttackButton("KeyEvent.VK_SPACE");
-        character1.setJumpButton("KeyEvent.VK_UP");
+        PlayerCharacter playerCharacter = new PlayerCharacter(1,2,3);
+        playerCharacter.setMovementSpeed (100);
+        playerCharacter.setHealthPoints (100);
+        playerCharacter.setAttackSpeed (1);
+        playerCharacter.setMoveLeftButton("KeyEvent.VK_LEFT");
+        playerCharacter.setMoveRightButton("KeyEvent.VK_RIGHT");
+        playerCharacter.setAttackButton("KeyEvent.VK_SPACE");
+        playerCharacter.setJumpButton("KeyEvent.VK_UP");
 
-        Character character2 = new NonPlayerCharacter(1,2,3);
-        character2.setMovementSpeed (100);
-        character2.setHealthPoints (100);
-        character2.set
-        character2.setItemDropChance(item: healthPotion ,chance: 40);
+        NonPlayerCharacter npc = new NonPlayerCharacter(1,2,3);
+        npc.setMovementSpeed (100);
+        npc.setHealthPoints (100);
+        npc.setMovementPattern(1);
+        npc.addToInventory(new Consumable("HealthPotion", 1,1) );
 
-        Item  rustyShortSword = new Weapon("Rusty  shortsword",9, 3);
-        Item  wornLeatherBoots = new Armor("Worn  Leather  Boots", 10, 0);
-        Item  tornPants = new  Armor("Torn  Pants", 0, 0);
-        character.addItem(rustyShortSword);
-        character.addItem(wornLeatherBoots);
-        character.addItem(tornPants);
-
+        Item rustyShortSword = new Weapon("Rusty shortsword",9, 3);
+        Item wornLeatherBoots = new Armor("Worn Leather Boots", 10, 0);
+        Item tornPants = new  Armor("Torn Pants", 0, 0);
+        playerCharacter.addToInventory(rustyShortSword);
+        playerCharacter.addToInventory(wornLeatherBoots);
+        playerCharacter.addToInventory(tornPants);
 
     }
 }

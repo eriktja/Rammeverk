@@ -1,5 +1,7 @@
 package Engine.Character;
 
+import Engine.Items.Item;
+
 public class NonPlayerCharacter extends Character{
     private int movementPattern;
 
@@ -7,7 +9,12 @@ public class NonPlayerCharacter extends Character{
         super(movementSpeed, healthPoints, attackSpeed);
     }
 
+    public NonPlayerCharacter() {
+
+    }
+
     public void setMovementPattern(int movementPattern){
         this.movementPattern = movementPattern;
     }
+
 }
