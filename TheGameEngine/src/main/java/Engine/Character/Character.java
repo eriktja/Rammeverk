@@ -5,14 +5,16 @@ import java.util.ArrayList;
 public class Character {
     private int movementSpeed;
     private int healthPoints;
+    private int attackSpeed;
     private ArrayList<Item> inventory = new ArrayList<>(); // Might move this to playerCharacter
 
     public Character() {
     }
 
-    public Character(int movementSpeed, int healthPoints) {
+    public Character(int movementSpeed, int healthPoints, int attackSpeed) {
         this.movementSpeed = movementSpeed;
         this.healthPoints = healthPoints;
+        this.attackSpeed = attackSpeed;
     }
 
     public int getMovementSpeed() {

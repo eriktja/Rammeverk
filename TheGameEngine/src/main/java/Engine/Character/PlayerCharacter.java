@@ -6,8 +6,8 @@ public class PlayerCharacter extends Character{
     public String attack;
     public String jump;
 
-    public PlayerCharacter(int movementSpeed, int healthPoints) {
-        super(movementSpeed, healthPoints);
+    public PlayerCharacter(int movementSpeed, int healthPoints, int attackSpeed) {
+        super(movementSpeed, healthPoints, attackSpeed);
     }
 
     public void setMoveLeftButton(String button){}
