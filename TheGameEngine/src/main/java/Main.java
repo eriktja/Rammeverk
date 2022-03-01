@@ -1,5 +1,4 @@
 import Engine.Button.Button;
-import Engine.Character.Character;
 import Engine.Character.NonPlayerCharacter;
 import Engine.Character.PlayerCharacter;
 import Engine.HighScore.HighScore;
@@ -10,7 +9,9 @@ import Engine.Items.Weapon;
 import Engine.Menu.Menu;
 import Engine.Rectangle.Obstacle;
 import Engine.Rectangle.Rectangle;
-import Engine.Window.CharacterAnimation;
+import Engine.Window.Animations.Animation;
+import Engine.Window.Animations.CharacterAnimation;
+import Engine.Window.Animations.RectangleAnimation;
 import Engine.Window.Window;
 
 public class Main {
@@ -92,9 +93,14 @@ public class Main {
         player.setCharacterAnimation(playerAnimation);
 
         // Scenario 16
+        CharacterAnimation playerAnimation1 = new CharacterAnimation();
+        playerAnimation1.setColor("102, 255, 102");
+        PlayerCharacter player1 = new PlayerCharacter();
+        player1.setCharacterAnimation(playerAnimation);
 
-
-
+        //Scenario 17
+        RectangleAnimation rectangleAnimation = new RectangleAnimation("lavaImage.jpg");
+        lava.setRectangleAnimation(rectangleAnimation);
 
 /*
         Window window = new Window();

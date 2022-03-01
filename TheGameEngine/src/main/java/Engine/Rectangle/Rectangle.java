@@ -1,10 +1,13 @@
 package Engine.Rectangle;
 
+import Engine.Window.Animations.RectangleAnimation;
+
 public class Rectangle {
     private int xPos;
     private int yPos;
     private int height;
     private int width;
+    private RectangleAnimation rectangleAnimation;
 
     public Rectangle(int xPos, int yPos, int height, int width)
     {
@@ -34,5 +37,29 @@ public class Rectangle {
     public void setWidth(int width)
     {
         this.width = width;
+    }
+
+    public int getxPos() {
+        return xPos;
+    }
+
+    public void setxPos(int xPos) {
+        this.xPos = xPos;
+    }
+
+    public int getyPos() {
+        return yPos;
+    }
+
+    public void setyPos(int yPos) {
+        this.yPos = yPos;
+    }
+
+    public RectangleAnimation getRectangleAnimation() {
+        return rectangleAnimation;
+    }
+
+    public void setRectangleAnimation(RectangleAnimation rectangleAnimation) {
+        this.rectangleAnimation = rectangleAnimation;
     }
 }

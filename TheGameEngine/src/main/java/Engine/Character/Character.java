@@ -1,6 +1,6 @@
 package Engine.Character;
 import Engine.Items.Item;
-import Engine.Window.CharacterAnimation;
+import Engine.Window.Animations.CharacterAnimation;
 
 import java.util.ArrayList;
 

@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe0c4638-e756-4c9c-b690-36aef2e1f317" name="Changes" comment="comment in character">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Engine/Window/CharacterAnimation.java" afterDir="false" />
+    <list default="true" id="fe0c4638-e756-4c9c-b690-36aef2e1f317" name="Changes" comment="CharacterAnimation">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Engine/Window/Animations/CharacterAnimation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Engine/Window/Animations/RectangleAnimation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Engine/Character/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Engine/Character/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Engine/Rectangle/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Engine/Rectangle/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Engine/Window/CharacterAnimation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Engine/Window/Animations/Animation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -139,7 +142,13 @@
       <option name="presentableId" value="LOCAL−00010" />
       <updated>1646145408270</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL−00011" summary="CharacterAnimation">
+      <created>1646148280145</created>
+      <option name="number" value="LOCAL−00011" />
+      <option name="presentableId" value="LOCAL−00011" />
+      <updated>1646148280146</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,6 +171,7 @@
     <MESSAGE value="Created Items and character" />
     <MESSAGE value="created player character and non-player character" />
     <MESSAGE value="comment in character" />
-    <option name="LAST_COMMIT_MESSAGE" value="comment in character" />
+    <MESSAGE value="CharacterAnimation" />
+    <option name="LAST_COMMIT_MESSAGE" value="CharacterAnimation" />
   </component>
 </project>
