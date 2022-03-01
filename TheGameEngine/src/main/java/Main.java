@@ -1,5 +1,4 @@
 import Engine.Button.Button;
-import Engine.Character.Character;
 import Engine.Character.NonPlayerCharacter;
 import Engine.Character.PlayerCharacter;
 import Engine.HighScore.HighScore;
@@ -8,7 +7,8 @@ import Engine.Items.Consumable;
 import Engine.Items.Item;
 import Engine.Items.Weapon;
 import Engine.Menu.Menu;
-import Engine.Obstacle.Obstacle;
+import Engine.Rectangle.Obstacle;
+import Engine.Rectangle.Rectangle;
 import Engine.Window.Window;
 
 public class Main {
@@ -74,16 +74,23 @@ public class Main {
         highScore.setHighscore(npc.getHighScorePoints());
 
         // Scenario 10
-        Obstacle lava = new Obstacle(5,15,10, 20);
+
         // Scenario 11
 
         // Scenario 12
 
         // Scenario 13
-
+        Obstacle lava = new Obstacle(10, 0, 5, 5,15,10, 20);
+        Rectangle platform = new Rectangle(250, 100,10,10);
         // Scenario 14
 
         // Scenario 15
+
+        // Scenario 16
+
+
+
+
 /*
         Window window = new Window();
         window.createWindow();

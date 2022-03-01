@@ -1,24 +1,23 @@
-package Engine.Obstacle;
+package Engine.Rectangle;
 
-public class Obstacle {
-    private int width;
+public class Obstacle extends Rectangle {
     private int movementSpeedReduction;
     private int damagePerSecond;
     private int chanceToSpawn;
 
-    public Obstacle(int width, int movementSpeedReduction, int damagePerSecond, int chanceToSpawn) {
-        this.width = width;
+    public Obstacle(int xPos, int yPos, int height, int width, int movementSpeedReduction, int damagePerSecond, int chanceToSpawn)
+    {
+        super(xPos, yPos, height, width);
         this.movementSpeedReduction = movementSpeedReduction;
         this.damagePerSecond = damagePerSecond;
         this.chanceToSpawn = chanceToSpawn;
     }
 
-    public int getWidth() {
-        return width;
-    }
-
-    public void setWidth(int width) {
-        this.width = width;
+    public Obstacle(int movementSpeedReduction, int damagePerSecond, int chanceToSpawn)
+    {
+        this.movementSpeedReduction = movementSpeedReduction;
+        this.damagePerSecond = damagePerSecond;
+        this.chanceToSpawn = chanceToSpawn;
     }
 
     public int getMovementSpeedReduction() {
