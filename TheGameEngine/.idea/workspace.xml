@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fe0c4638-e756-4c9c-b690-36aef2e1f317" name="Changes" comment="created player character and non-player character">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Engine/Character/NonPlayerCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Engine/Character/NonPlayerCharacter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Engine/Character/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Engine/Character/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Engine/Character/PlayerCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Engine/Character/PlayerCharacter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

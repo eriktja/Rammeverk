@@ -15,6 +15,7 @@ public class PlayerCharacter extends Character{
 
     }
 
+    // Keyboard inputs
     public void setMoveLeftButton(String button){
         moveLeft = button;
     }

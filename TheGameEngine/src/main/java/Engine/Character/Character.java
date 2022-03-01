@@ -52,6 +52,10 @@ public class Character {
         return jumpHeight;
     }
 
+    public boolean isFalling(){
+        return false;
+    }
+
     public void setJumpHeight(int jumpHeight) {
         this.jumpHeight = jumpHeight;
     }
