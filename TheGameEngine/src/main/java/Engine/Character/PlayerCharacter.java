@@ -30,4 +30,8 @@ public class PlayerCharacter extends Character{
     public void setUseConsumable(String button) {
         useConsumable = button;
     }
+
+    public boolean isDead(){
+        return this.getHealthPoints() == 0;
+    }
 }

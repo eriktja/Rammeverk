@@ -47,6 +47,13 @@ public class Main {
         npc.addToInventory(new Item("BIG FUCKING GUN 3000"));
 
         // Scenario 6
+        PlayerCharacter character1 = new PlayerCharacter();
+        character1.setMovementSpeed(100);
+        character1.setHealthPoints(100);
+        character1.setAttackSpeed(1);
+        character1.setJumpHeight(100);
+
+        // Scenario 7
         Item rustyShortSword = new Weapon("Rusty short-sword", 9, 3);
         Item wornLeatherBoots = new Armor("Worn Leather Boots", 10, 0);
         Item tornPants = new Armor("Torn Pants", 0, 0);
@@ -55,21 +62,19 @@ public class Main {
         character.addToInventory(wornLeatherBoots);
         character.addToInventory(tornPants);
 
-        // Scenario 7
+        // Scenario 8
         character.setUseConsumable("KeyEvent.VK_E");
         Item healthPotion = new Consumable("Health Potion", 1,50);
         character.addToInventory(healthPotion);
 
-        // Scenario 8
+        // Scenario 9
         npc.setHighScorePoints(10);
 
         HighScore highScore = new HighScore();
         highScore.setHighscore(npc.getHighScorePoints());
 
-        // Scenario 9
-        Obstacle lava = new Obstacle(15,10,20);
         // Scenario 10
-
+        Obstacle lava = new Obstacle(15,10,20);
         // Scenario 11
 
         // Scenario 12
@@ -77,6 +82,8 @@ public class Main {
         // Scenario 13
 
         // Scenario 14
+
+        // Scenario 15
 
 /*
         Window window = new Window();

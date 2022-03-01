@@ -6,6 +6,7 @@ public class Character {
     private int movementSpeed;
     private int healthPoints;
     private int attackSpeed;
+    private int jumpHeight = 10;
     private ArrayList<Item> inventory = new ArrayList<>(); // Might move this to playerCharacter
 
     public Character() {
@@ -45,6 +46,14 @@ public class Character {
 
     public void addToInventory(Item item){
         inventory.add(item);
+    }
+
+    public int getJumpHeight() {
+        return jumpHeight;
+    }
+
+    public void setJumpHeight(int jumpHeight) {
+        this.jumpHeight = jumpHeight;
     }
 
     public void useItem(Item item){
