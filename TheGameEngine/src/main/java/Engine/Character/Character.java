@@ -1,5 +1,7 @@
 package Engine.Character;
 import Engine.Items.Item;
+import Engine.Window.CharacterAnimation;
+
 import java.util.ArrayList;
 
 public class Character {
@@ -7,6 +9,7 @@ public class Character {
     private int healthPoints;
     private int attackSpeed;
     private int jumpHeight = 10;
+    private CharacterAnimation characterAnimation;
     private ArrayList<Item> inventory = new ArrayList<>(); // Might move this to playerCharacter
 
     public Character() {
@@ -52,12 +55,20 @@ public class Character {
         return jumpHeight;
     }
 
-    public boolean isFalling(){
-        return false;
-    }
-
     public void setJumpHeight(int jumpHeight) {
         this.jumpHeight = jumpHeight;
+    }
+
+    public CharacterAnimation getCharacterAnimation() {
+        return characterAnimation;
+    }
+
+    public void setCharacterAnimation(CharacterAnimation characterAnimation) {
+        this.characterAnimation = characterAnimation;
+    }
+
+    public boolean isFalling(){
+        return false;
     }
 
     public void useItem(Item item){

@@ -1,4 +1,5 @@
 import Engine.Button.Button;
+import Engine.Character.Character;
 import Engine.Character.NonPlayerCharacter;
 import Engine.Character.PlayerCharacter;
 import Engine.HighScore.HighScore;
@@ -9,6 +10,7 @@ import Engine.Items.Weapon;
 import Engine.Menu.Menu;
 import Engine.Rectangle.Obstacle;
 import Engine.Rectangle.Rectangle;
+import Engine.Window.CharacterAnimation;
 import Engine.Window.Window;
 
 public class Main {
@@ -85,6 +87,9 @@ public class Main {
         // Scenario 14
 
         // Scenario 15
+        CharacterAnimation playerAnimation = new CharacterAnimation("image.jpg");
+        PlayerCharacter player = new PlayerCharacter();
+        player.setCharacterAnimation(playerAnimation);
 
         // Scenario 16
 
