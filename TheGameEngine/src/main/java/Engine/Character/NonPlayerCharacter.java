@@ -29,7 +29,7 @@ public class NonPlayerCharacter extends Character{
         return highScorePoints;
     }
 
-    public int killed(){
-        return highScorePoints;
+    public boolean killed(){
+        return this.getHealthPoints() <= 0;
     }
 }
