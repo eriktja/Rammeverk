@@ -5,13 +5,11 @@ public class HighScore {
 
     public HighScore() {}
 
-    public double getHighscore()
-    {
+    public double getHighscore() {
         return highscore;
     }
 
-    public void setHighscore(double highscore)
-    {
+    public void setHighscore(double highscore) {
         this.highscore += highscore;
     }
 }

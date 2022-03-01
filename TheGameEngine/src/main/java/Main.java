@@ -74,7 +74,7 @@ public class Main {
         highScore.setHighscore(npc.getHighScorePoints());
 
         // Scenario 10
-        Obstacle lava = new Obstacle(15,10,20);
+        Obstacle lava = new Obstacle(5,15,10, 20);
         // Scenario 11
 
         // Scenario 12
@@ -84,7 +84,6 @@ public class Main {
         // Scenario 14
 
         // Scenario 15
-
 /*
         Window window = new Window();
         window.createWindow();

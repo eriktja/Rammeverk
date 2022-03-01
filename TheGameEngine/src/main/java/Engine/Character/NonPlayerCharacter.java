@@ -19,13 +19,11 @@ public class NonPlayerCharacter extends Character{
         this.movementPattern = movementPattern;
     }
 
-    public void setHighScorePoints(int highScorePoints)
-    {
+    public void setHighScorePoints(int highScorePoints) {
         this.highScorePoints = highScorePoints;
     }
 
-    public int getHighScorePoints()
-    {
+    public int getHighScorePoints() {
         return highScorePoints;
     }
 
