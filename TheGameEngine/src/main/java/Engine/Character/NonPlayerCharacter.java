@@ -10,10 +10,17 @@ public class NonPlayerCharacter extends Character{
         super(movementSpeed, healthPoints, attackSpeed);
         this.highScorePoints = highScorePoints;
     }
-
     public NonPlayerCharacter() {
-
     }
+
+    // Factory methods
+    public static NonPlayerCharacter createCharacter(){
+        return new NonPlayerCharacter();
+    }
+    public static NonPlayerCharacter createCharacter(int movementSpeed, int healthPoints, int attackSpeed, int highScorePoints){
+        return new NonPlayerCharacter(movementSpeed, healthPoints, attackSpeed, highScorePoints);
+    }
+
 
     public void setMovementPattern(int movementPattern){
         this.movementPattern = movementPattern;
