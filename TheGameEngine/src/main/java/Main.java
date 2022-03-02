@@ -1,4 +1,5 @@
 import Engine.Button.Button;
+import Engine.Character.Character;
 import Engine.Character.NonPlayerCharacter;
 import Engine.Character.PlayerCharacter;
 import Engine.HighScore.HighScore;
@@ -41,6 +42,9 @@ public class Main {
         character.setMoveRightButton("KeyEvent.VK_RIGHT");
         character.setAttackButton("KeyEvent.VK_SPACE");
         character.setJumpButton("KeyEvent.VK_UP");
+
+        Character character2 = Character.createCharacter();
+
 
         // Scenario 5
         NonPlayerCharacter npc = new NonPlayerCharacter();

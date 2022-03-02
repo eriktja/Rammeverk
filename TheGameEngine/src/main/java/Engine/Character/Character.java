@@ -21,11 +21,11 @@ public class Character {
         this.attackSpeed = attackSpeed;
     }
 
-    public Character createCharacter(){
+    public static Character createCharacter(){
         return new Character();
     }
 
-    public Character createCharacter(int movementSpeed, int healthPoints, int attackSpeed){
+    public static Character createCharacter(int movementSpeed, int healthPoints, int attackSpeed){
         return new Character(movementSpeed, healthPoints, attackSpeed);
     }
 
