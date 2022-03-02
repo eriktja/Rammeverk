@@ -21,13 +21,14 @@ public class Character {
         this.attackSpeed = attackSpeed;
     }
 
+    // Factory methods
     public static Character createCharacter(){
         return new Character();
     }
-
     public static Character createCharacter(int movementSpeed, int healthPoints, int attackSpeed){
         return new Character(movementSpeed, healthPoints, attackSpeed);
     }
+
 
     public int getAttackSpeed()
     {

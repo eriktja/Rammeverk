@@ -15,6 +15,13 @@ public class PlayerCharacter extends Character{
 
     }
 
+    // Factory methods
+    public static PlayerCharacter createCharacter(){
+        return new PlayerCharacter();
+    }
+    public static PlayerCharacter createCharacter(int movementSpeed, int healthPoints, int attackSpeed){
+        return new PlayerCharacter(movementSpeed, healthPoints, attackSpeed);
+    }
     // Keyboard inputs
     public void setMoveLeftButton(String button){
         moveLeft = button;

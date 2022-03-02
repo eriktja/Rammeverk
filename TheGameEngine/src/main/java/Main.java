@@ -43,7 +43,11 @@ public class Main {
         character.setAttackButton("KeyEvent.VK_SPACE");
         character.setJumpButton("KeyEvent.VK_UP");
 
-        Character character2 = Character.createCharacter();
+        PlayerCharacter character2 = PlayerCharacter.createCharacter(100, 100, 1);
+        character2.setMoveLeftButton("KeyEvent.VK_LEFT");
+        character2.setMoveRightButton("KeyEvent.VK_RIGHT");
+        character2.setAttackButton("KeyEvent.VK_SPACE");
+        character2.setJumpButton("KeyEvent.VK_UP");
 
 
         // Scenario 5
