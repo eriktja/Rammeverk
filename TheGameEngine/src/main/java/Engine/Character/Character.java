@@ -21,6 +21,14 @@ public class Character {
         this.attackSpeed = attackSpeed;
     }
 
+    public Character createCharacter(){
+        return new Character();
+    }
+
+    public Character createCharacter(int movementSpeed, int healthPoints, int attackSpeed){
+        return new Character(movementSpeed, healthPoints, attackSpeed);
+    }
+
     public int getAttackSpeed()
     {
         return attackSpeed;
