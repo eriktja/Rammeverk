@@ -47,7 +47,7 @@ public class Main {
         npc.setMovementSpeed(100);
         npc.setHealthPoints(100);
         npc.setMovementPattern(50);
-        npc.addToInventory(new Item("BIG FUCKING GUN 3000"));
+        npc.addToInventory(new Weapon("BIG FUCKING GUN 3000", 20,3));
 
         // Scenario 6
         PlayerCharacter character1 = new PlayerCharacter();
