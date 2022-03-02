@@ -22,6 +22,7 @@ public class PlayerCharacter extends Character{
     public static PlayerCharacter createCharacter(int movementSpeed, int healthPoints, int attackSpeed){
         return new PlayerCharacter(movementSpeed, healthPoints, attackSpeed);
     }
+
     // Keyboard inputs
     public void setMoveLeftButton(String button){
         moveLeft = button;
