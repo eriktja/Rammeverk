@@ -5,10 +5,22 @@ public class Weapon extends Item{
     private int attackDamage;
     private int attackSpeed;
 
-    public Weapon(String name, int attackDamage, int attackSpeed) {
+    private Weapon(String name, int attackDamage, int attackSpeed) {
         super(name);
         this.attackDamage = attackDamage;
         this.attackSpeed = attackSpeed;
+    }
+
+    private Weapon() {
+
+    }
+
+    // Factory methods
+    public static Weapon createWeapon(){
+        return new Weapon();
+    }
+    public static Weapon createWeapon(String name, int attackDamage, int attackSpeed){
+        return new Weapon(name, attackDamage, attackSpeed);
     }
 
     public int getAttackDamage() {
