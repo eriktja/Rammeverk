@@ -13,6 +13,8 @@ import Engine.Window.Animations.CharacterAnimation;
 import Engine.Window.Animations.RectangleAnimation;
 import Engine.Window.Window;
 
+import java.awt.event.KeyEvent;
+
 public class Main {
     public static void main(String[] args) {
         // Scenario 1
@@ -93,7 +95,7 @@ public class Main {
         // Scenario 9
         npc.setHighScorePoints(10);
 
-        HighScore highScore = new HighScore();
+        HighScore highScore = HighScore.create();
         highScore.setHighscore(npc.getHighScorePoints());
 
         // Scenario 10

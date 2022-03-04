@@ -1,9 +1,16 @@
 package Engine.HighScore;
 
 public class HighScore {
+    private static HighScore instance;
     private double highscore = 0;
 
-    public HighScore() {}
+    private HighScore() {}
+
+    public static HighScore create(){
+        if(instance == null)
+            instance = new HighScore();
+        return instance;
+    }
 
     public double getHighscore() {
         return highscore;
