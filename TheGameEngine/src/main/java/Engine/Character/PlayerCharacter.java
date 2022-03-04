@@ -1,6 +1,7 @@
 package Engine.Character;
 
 public class PlayerCharacter extends Character{
+    public static PlayerCharacter instance = null;
     public String moveLeft;
     public String moveRight;
     public String attack;
@@ -13,6 +14,12 @@ public class PlayerCharacter extends Character{
 
     private PlayerCharacter() {
 
+    }
+
+    public static PlayerCharacter get(){
+        if(PlayerCharacter.instance == null)
+            PlayerCharacter.instance = new PlayerCharacter();
+        return PlayerCharacter.instance;
     }
 
     // Factory methods
