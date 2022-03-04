@@ -7,11 +7,11 @@ public class PlayerCharacter extends Character{
     public String jump;
     public String useConsumable;
 
-    public PlayerCharacter(int movementSpeed, int healthPoints, int attackSpeed) {
+    private PlayerCharacter(int movementSpeed, int healthPoints, int attackSpeed) {
         super(movementSpeed, healthPoints, attackSpeed);
     }
 
-    public PlayerCharacter() {
+    private PlayerCharacter() {
 
     }
 

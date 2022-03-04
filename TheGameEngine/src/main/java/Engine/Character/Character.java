@@ -12,10 +12,10 @@ public class Character {
     private CharacterAnimation characterAnimation;
     private ArrayList<Item> inventory = new ArrayList<>(); // Might move this to playerCharacter
 
-    public Character() {
+    protected Character() {
     }
 
-    public Character(int movementSpeed, int healthPoints, int attackSpeed) {
+    protected Character(int movementSpeed, int healthPoints, int attackSpeed) {
         this.movementSpeed = movementSpeed;
         this.healthPoints = healthPoints;
         this.attackSpeed = attackSpeed;

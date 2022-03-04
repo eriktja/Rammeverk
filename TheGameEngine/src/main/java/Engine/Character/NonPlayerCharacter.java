@@ -6,12 +6,13 @@ public class NonPlayerCharacter extends Character{
     private int movementPattern;
     private int highScorePoints;
 
-    public NonPlayerCharacter(int movementSpeed, int healthPoints, int attackSpeed, int highScorePoints) {
+    private NonPlayerCharacter(int movementSpeed, int healthPoints, int attackSpeed, int highScorePoints) {
         super(movementSpeed, healthPoints, attackSpeed);
         this.highScorePoints = highScorePoints;
     }
-    public NonPlayerCharacter() {
+    private NonPlayerCharacter() {
     }
+
 
     // Factory methods
     public static NonPlayerCharacter createCharacter(){
