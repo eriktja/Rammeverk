@@ -14,7 +14,7 @@ public class Obstacle extends Rectangle {
     }
 
     /*
-    TODO add standard values to object?
+    // add standard values to object?
     private Obstacle(int movementSpeedReduction, int damagePerSecond, int chanceToSpawn)
     {
         this.movementSpeedReduction = movementSpeedReduction;
