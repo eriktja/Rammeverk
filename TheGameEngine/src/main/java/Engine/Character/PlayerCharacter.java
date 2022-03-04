@@ -16,6 +16,7 @@ public class PlayerCharacter extends Character{
 
     }
 
+    // Example of singleton-pattern
     public static PlayerCharacter get(){
         if(PlayerCharacter.instance == null)
             PlayerCharacter.instance = new PlayerCharacter();

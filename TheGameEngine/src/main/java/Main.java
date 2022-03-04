@@ -18,12 +18,12 @@ import Engine.Window.Window;
 public class Main {
     public static void main(String[] args) {
         // Scenario 1
-        Window window = new Window();
+        Window window = Window.get();
         window.setFullscreen();
         window.setBackground("Background");
 
         // Scenario 2
-        Window window1 = new Window(800, 600);
+        Window window1 = Window.get(800, 600);
         window1.setBackground("blue");
 
         // Scenario 3

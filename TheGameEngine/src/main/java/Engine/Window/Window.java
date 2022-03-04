@@ -2,15 +2,29 @@ package Engine.Window;
 
 public class Window {
     // The window handler
+    private static Window instance;
     private long window;
     private int height, width;
     private String background;
 
-    public Window(int height, int width){
+    private Window(int height, int width){
         this.height = height;
         this.width = width;
     }
-    public Window(){
+    private Window(){
+    }
+
+    public static Window get(){
+        if(instance == null)
+            instance = new Window();
+        return instance;
+    }
+    public static Window get(int height, int width){
+        if(instance == null){
+            instance = new Window();
+            instance.setSize(height, width);
+        }
+        return instance;
     }
 
     public void setFullscreen(){
