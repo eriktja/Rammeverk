@@ -22,8 +22,8 @@ public class Window {
     public static Window create(int height, int width){
         if(instance == null){
             instance = new Window();
-            instance.setSize(height, width);
         }
+        instance.setSize(height, width);
         return instance;
     }
 
