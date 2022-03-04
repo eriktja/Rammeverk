@@ -10,6 +10,7 @@ public class NonPlayerCharacter extends Character{
         super(movementSpeed, healthPoints, attackSpeed);
         this.highScorePoints = highScorePoints;
     }
+
     private NonPlayerCharacter() {
     }
 

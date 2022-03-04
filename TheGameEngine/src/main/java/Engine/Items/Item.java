@@ -1,10 +1,24 @@
 package Engine.Items;
 
+import Engine.Character.Character;
+
 public class Item {
     private String name;
 
-    public Item(String name) {
+    protected Item(String name) {
         this.name = name;
+    }
+
+    protected Item() {
+    }
+
+    // Factory methods
+    public static Item createItem(){
+        return new Item();
+    }
+
+    public static Item createItem(String name){
+        return new Item(name);
     }
 
     public String getName() {

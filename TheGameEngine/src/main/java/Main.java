@@ -64,12 +64,12 @@ public class Main {
         npc.setMovementSpeed(100);
         npc.setHealthPoints(100);
         npc.setMovementPattern(50);
-        npc.addToInventory(new Weapon("BIG FUCKING GUN 3000", 10, 1));
+        npc.addToInventory(Weapon.createWeapon("BIG FUCKING GUN 3000", 10, 1));
 
         NonPlayerCharacter enemy = NonPlayerCharacter.
                 createCharacter(100, 100, 1, 10);
         enemy.setMovementPattern(30);
-        npc.addToInventory(new Weapon("BB-gun", 1, 1));
+        npc.addToInventory(Weapon.createWeapon("BB-gun", 1, 1));
 
         // Scenario 6
         PlayerCharacter character1 = PlayerCharacter.createCharacter();
@@ -79,9 +79,9 @@ public class Main {
         character1.setJumpHeight(100);
 
         // Scenario 7
-        Item rustyShortSword = new Weapon("Rusty short-sword", 9, 3);
-        Item wornLeatherBoots = new Armor("Worn Leather Boots", 10, 0);
-        Item tornPants = new Armor("Torn Pants", 0, 0);
+        Item rustyShortSword = Weapon.createWeapon("Rusty short-sword", 9, 3);
+        Item wornLeatherBoots = Armor.createArmor("Worn Leather Boots", 10, 0);
+        Item tornPants = Armor.createArmor("Torn Pants", 0, 0);
 
         character.addToInventory(rustyShortSword);
         character.addToInventory(wornLeatherBoots);
@@ -89,7 +89,7 @@ public class Main {
 
         // Scenario 8
         character.setUseConsumable("KeyEvent.VK_E");
-        Item healthPotion = new Consumable("Health Potion", 1,50);
+        Item healthPotion = Consumable.createConsumable("Health Potion", 1,50);
         character.addToInventory(healthPotion);
 
         // Scenario 9

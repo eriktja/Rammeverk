@@ -1,15 +1,28 @@
 package Engine.Items;
 
 import Engine.Character.Character;
+import Engine.Character.NonPlayerCharacter;
 
 public class Consumable extends Item{
     private int function;
     private int amount;
 
-    public Consumable(String name, int function, int amount) {
+    private Consumable(String name, int function, int amount) {
         super(name);
         this.function = function;
         this.amount = amount;
+    }
+
+    private Consumable() {
+
+    }
+
+    // Factory methods
+    public static Consumable createConsumable(){
+        return new Consumable();
+    }
+    public static Consumable createConsumable(String name, int function, int amount){
+        return new Consumable(name, function, amount);
     }
 
     public int getFunction() {

@@ -5,10 +5,22 @@ public class Armor extends Item{
     private int healthBonus;
     private int movementSpeedReduction;
 
-    public Armor(String name, int healthBonus, int movementSpeedReduction) {
+    private Armor(String name, int healthBonus, int movementSpeedReduction) {
         super(name);
         this.healthBonus = healthBonus;
         this.movementSpeedReduction = movementSpeedReduction;
+    }
+
+    private Armor() {
+
+    }
+
+    // Factory methods
+    public static Armor createArmor(){
+        return new Armor();
+    }
+    public static Armor createArmor(String name, int healthBonus, int movementSpeedReduction){
+        return new Armor(name, healthBonus, movementSpeedReduction);
     }
 
     public int getHealthBonus() {
