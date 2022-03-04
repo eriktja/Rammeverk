@@ -43,6 +43,15 @@ public class Main {
         character.setAttackButton("KeyEvent.VK_SPACE");
         character.setJumpButton("KeyEvent.VK_UP");
 
+        PlayerCharacter mainCharacter = PlayerCharacter.get();
+        character.setMovementSpeed(100);
+        character.setHealthPoints(100);
+        character.setAttackSpeed(1);
+        character.setMoveLeftButton("KeyEvent.VK_LEFT");
+        character.setMoveRightButton("KeyEvent.VK_RIGHT");
+        character.setAttackButton("KeyEvent.VK_SPACE");
+        character.setJumpButton("KeyEvent.VK_UP");
+
         PlayerCharacter character2 = PlayerCharacter.createCharacter(100, 100, 1);
         character2.setMoveLeftButton("KeyEvent.VK_LEFT");
         character2.setMoveRightButton("KeyEvent.VK_RIGHT");
