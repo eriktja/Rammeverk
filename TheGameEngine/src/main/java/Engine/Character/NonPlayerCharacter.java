@@ -1,7 +1,5 @@
 package Engine.Character;
 
-import Engine.Items.Item;
-
 public class NonPlayerCharacter extends Character{
     private int movementPattern;
     private int highScorePoints;
@@ -16,10 +14,10 @@ public class NonPlayerCharacter extends Character{
 
 
     // Factory methods
-    public static NonPlayerCharacter createCharacter(){
+    public static NonPlayerCharacter create(){
         return new NonPlayerCharacter();
     }
-    public static NonPlayerCharacter createCharacter(int movementSpeed, int healthPoints, int attackSpeed, int highScorePoints){
+    public static NonPlayerCharacter create(int movementSpeed, int healthPoints, int attackSpeed, int highScorePoints){
         return new NonPlayerCharacter(movementSpeed, healthPoints, attackSpeed, highScorePoints);
     }
 

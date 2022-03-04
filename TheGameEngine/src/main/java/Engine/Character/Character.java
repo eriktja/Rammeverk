@@ -22,10 +22,10 @@ public class Character {
     }
 
     // Factory methods
-    public static Character createCharacter(){
+    public static Character create(){
         return new Character();
     }
-    public static Character createCharacter(int movementSpeed, int healthPoints, int attackSpeed){
+    public static Character create(int movementSpeed, int healthPoints, int attackSpeed){
         return new Character(movementSpeed, healthPoints, attackSpeed);
     }
 

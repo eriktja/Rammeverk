@@ -14,12 +14,12 @@ public class Window {
     private Window(){
     }
 
-    public static Window get(){
+    public static Window create(){
         if(instance == null)
             instance = new Window();
         return instance;
     }
-    public static Window get(int height, int width){
+    public static Window create(int height, int width){
         if(instance == null){
             instance = new Window();
             instance.setSize(height, width);

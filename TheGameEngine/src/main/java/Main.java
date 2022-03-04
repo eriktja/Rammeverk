@@ -16,12 +16,12 @@ import Engine.Window.Window;
 public class Main {
     public static void main(String[] args) {
         // Scenario 1
-        Window window = Window.get();
+        Window window = Window.create();
         window.setFullscreen();
         window.setBackground("Background");
 
         // Scenario 2
-        Window window1 = Window.get(800, 600);
+        Window window1 = Window.create(800, 600);
         window1.setBackground("blue");
 
         // Scenario 3
@@ -32,7 +32,7 @@ public class Main {
         menu.addButton(quit);
 
         // Scenario 4
-        PlayerCharacter character = PlayerCharacter.createCharacter();
+        PlayerCharacter character = PlayerCharacter.create();
         character.setMovementSpeed(100);
         character.setHealthPoints(100);
         character.setAttackSpeed(1);
@@ -41,7 +41,7 @@ public class Main {
         character.setAttackButton("KeyEvent.VK_SPACE");
         character.setJumpButton("KeyEvent.VK_UP");
 
-        PlayerCharacter mainCharacter = PlayerCharacter.get();
+        PlayerCharacter mainCharacter = PlayerCharacter.create();
         character.setMovementSpeed(100);
         character.setHealthPoints(100);
         character.setAttackSpeed(1);
@@ -50,7 +50,7 @@ public class Main {
         character.setAttackButton("KeyEvent.VK_SPACE");
         character.setJumpButton("KeyEvent.VK_UP");
 
-        PlayerCharacter character2 = PlayerCharacter.createCharacter(100, 100, 1);
+        PlayerCharacter character2 = PlayerCharacter.create(100, 100, 1);
         character2.setMoveLeftButton("KeyEvent.VK_LEFT");
         character2.setMoveRightButton("KeyEvent.VK_RIGHT");
         character2.setAttackButton("KeyEvent.VK_SPACE");
@@ -58,19 +58,19 @@ public class Main {
 
 
         // Scenario 5
-        NonPlayerCharacter npc = NonPlayerCharacter.createCharacter();
+        NonPlayerCharacter npc = NonPlayerCharacter.create();
         npc.setMovementSpeed(100);
         npc.setHealthPoints(100);
         npc.setMovementPattern(50);
         npc.addToInventory(Weapon.create("BIG FUCKING GUN 3000", 10, 1));
 
         NonPlayerCharacter enemy = NonPlayerCharacter.
-                createCharacter(100, 100, 1, 10);
+                create(100, 100, 1, 10);
         enemy.setMovementPattern(30);
         npc.addToInventory(Weapon.create("BB-gun", 1, 1));
 
         // Scenario 6
-        PlayerCharacter character1 = PlayerCharacter.createCharacter();
+        PlayerCharacter character1 = PlayerCharacter.create();
         character1.setMovementSpeed(100);
         character1.setHealthPoints(100);
         character1.setAttackSpeed(1);
@@ -109,13 +109,13 @@ public class Main {
 
         // Scenario 15
         CharacterAnimation playerAnimation = new CharacterAnimation("image.jpg");
-        PlayerCharacter player = PlayerCharacter.createCharacter();
+        PlayerCharacter player = PlayerCharacter.create();
         player.setCharacterAnimation(playerAnimation);
 
         // Scenario 16
         CharacterAnimation playerAnimation1 = new CharacterAnimation();
         playerAnimation1.setColor("102, 255, 102");
-        PlayerCharacter player1 = PlayerCharacter.createCharacter();
+        PlayerCharacter player1 = PlayerCharacter.create();
         player1.setCharacterAnimation(playerAnimation);
 
         //Scenario 17
