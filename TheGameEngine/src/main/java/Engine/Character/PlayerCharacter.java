@@ -16,20 +16,29 @@ public class PlayerCharacter extends Character{
 
     }
 
-    // Example of singleton-pattern
-    public static PlayerCharacter get(){
+
+    // Implementation of singleton-pattern
+    public static PlayerCharacter create(){
         if(PlayerCharacter.instance == null)
             PlayerCharacter.instance = new PlayerCharacter();
         return PlayerCharacter.instance;
     }
+    public static PlayerCharacter create(int movementSpeed, int healthPoints, int attackSpeed){
+        if(PlayerCharacter.instance == null){
+            PlayerCharacter.instance = new PlayerCharacter();
+        }
+        instance.setMovementSpeed(movementSpeed);
+        instance.setMovementSpeed(healthPoints);
+        instance.setMovementSpeed(attackSpeed);
+        return PlayerCharacter.instance;
+    }
 
-    // Factory methods
-    public static PlayerCharacter createCharacter(){
-        return new PlayerCharacter();
-    }
-    public static PlayerCharacter createCharacter(int movementSpeed, int healthPoints, int attackSpeed){
-        return new PlayerCharacter(movementSpeed, healthPoints, attackSpeed);
-    }
+//    public static PlayerCharacter createCharacter(){
+//        return new PlayerCharacter();
+//    }
+//    public static PlayerCharacter createCharacter(int movementSpeed, int healthPoints, int attackSpeed){
+//        return new PlayerCharacter(movementSpeed, healthPoints, attackSpeed);
+//    }
 
     // Keyboard inputs
     public void setMoveLeftButton(String button){
