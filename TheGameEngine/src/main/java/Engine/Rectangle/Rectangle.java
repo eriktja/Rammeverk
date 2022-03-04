@@ -1,5 +1,6 @@
 package Engine.Rectangle;
 
+import Engine.Items.Item;
 import Engine.Window.Animations.RectangleAnimation;
 
 public class Rectangle {
@@ -9,7 +10,7 @@ public class Rectangle {
     private int width;
     private RectangleAnimation rectangleAnimation;
 
-    public Rectangle(int xPos, int yPos, int height, int width)
+    protected Rectangle(int xPos, int yPos, int height, int width)
     {
         this.xPos = xPos;
         this.yPos = yPos;
@@ -17,7 +18,16 @@ public class Rectangle {
         this.width = width;
     }
 
-    public Rectangle() {}
+    protected Rectangle() {}
+
+    // Factory methods
+    public static Rectangle create(){
+        return new Rectangle();
+    }
+
+    public static Rectangle create(int xPos, int yPos, int height, int width){
+        return new Rectangle(xPos, yPos, height, width);
+    }
 
     public int getHeight()
     {

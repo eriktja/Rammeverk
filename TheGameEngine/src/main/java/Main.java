@@ -99,8 +99,8 @@ public class Main {
         // Scenario 10
 
         // Scenario 11
-        Obstacle lava = new Obstacle(10, 0, 1, 5,15,10, 20);
-        Rectangle platform = new Rectangle(250, 100,10,10);
+        Obstacle lava = Obstacle.create(10, 0, 1, 5, 15, 10, 20);
+        Rectangle platform = Rectangle.create(250, 100,10,10);
         // Scenario 12
 
         // Scenario 13
