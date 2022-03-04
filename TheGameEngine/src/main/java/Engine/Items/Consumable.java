@@ -1,8 +1,5 @@
 package Engine.Items;
 
-import Engine.Character.Character;
-import Engine.Character.NonPlayerCharacter;
-
 public class Consumable extends Item{
     private int function;
     private int amount;
@@ -18,10 +15,10 @@ public class Consumable extends Item{
     }
 
     // Factory methods
-    public static Consumable createConsumable(){
+    public static Consumable create(){
         return new Consumable();
     }
-    public static Consumable createConsumable(String name, int function, int amount){
+    public static Consumable create(String name, int function, int amount){
         return new Consumable(name, function, amount);
     }
 

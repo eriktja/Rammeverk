@@ -16,10 +16,10 @@ public class Weapon extends Item{
     }
 
     // Factory methods
-    public static Weapon createWeapon(){
+    public static Weapon create(){
         return new Weapon();
     }
-    public static Weapon createWeapon(String name, int attackDamage, int attackSpeed){
+    public static Weapon create(String name, int attackDamage, int attackSpeed){
         return new Weapon(name, attackDamage, attackSpeed);
     }
 

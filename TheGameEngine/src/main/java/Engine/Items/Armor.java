@@ -16,10 +16,10 @@ public class Armor extends Item{
     }
 
     // Factory methods
-    public static Armor createArmor(){
+    public static Armor create(){
         return new Armor();
     }
-    public static Armor createArmor(String name, int healthBonus, int movementSpeedReduction){
+    public static Armor create(String name, int healthBonus, int movementSpeedReduction){
         return new Armor(name, healthBonus, movementSpeedReduction);
     }
 

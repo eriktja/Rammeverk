@@ -1,7 +1,5 @@
 package Engine.Items;
 
-import Engine.Character.Character;
-
 public class Item {
     private String name;
 
@@ -13,11 +11,11 @@ public class Item {
     }
 
     // Factory methods
-    public static Item createItem(){
+    public static Item create(){
         return new Item();
     }
 
-    public static Item createItem(String name){
+    public static Item create(String name){
         return new Item(name);
     }
 
