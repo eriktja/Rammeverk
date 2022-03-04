@@ -34,7 +34,7 @@ public class Main {
         menu.addButton(quit);
 
         // Scenario 4
-        PlayerCharacter character = new PlayerCharacter();
+        PlayerCharacter character = PlayerCharacter.createCharacter();
         character.setMovementSpeed(100);
         character.setHealthPoints(100);
         character.setAttackSpeed(1);
@@ -51,7 +51,7 @@ public class Main {
 
 
         // Scenario 5
-        NonPlayerCharacter npc = new NonPlayerCharacter();
+        NonPlayerCharacter npc = NonPlayerCharacter.createCharacter();
         npc.setMovementSpeed(100);
         npc.setHealthPoints(100);
         npc.setMovementPattern(50);
@@ -63,7 +63,7 @@ public class Main {
         npc.addToInventory(new Weapon("BB-gun", 1, 1));
 
         // Scenario 6
-        PlayerCharacter character1 = new PlayerCharacter();
+        PlayerCharacter character1 = PlayerCharacter.createCharacter();
         character1.setMovementSpeed(100);
         character1.setHealthPoints(100);
         character1.setAttackSpeed(1);
@@ -102,18 +102,20 @@ public class Main {
 
         // Scenario 15
         CharacterAnimation playerAnimation = new CharacterAnimation("image.jpg");
-        PlayerCharacter player = new PlayerCharacter();
+        PlayerCharacter player = PlayerCharacter.createCharacter();
         player.setCharacterAnimation(playerAnimation);
 
         // Scenario 16
         CharacterAnimation playerAnimation1 = new CharacterAnimation();
         playerAnimation1.setColor("102, 255, 102");
-        PlayerCharacter player1 = new PlayerCharacter();
+        PlayerCharacter player1 = PlayerCharacter.createCharacter();
         player1.setCharacterAnimation(playerAnimation);
 
         //Scenario 17
         RectangleAnimation rectangleAnimation = new RectangleAnimation("lavaImage.jpg");
         lava.setRectangleAnimation(rectangleAnimation);
+
+
 
 /*
         Window window = new Window();
