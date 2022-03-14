@@ -44,20 +44,19 @@ public class Main {
         character.setJumpButton("KeyEvent.VK_UP");
 
         PlayerCharacter mainCharacter = PlayerCharacter.create();
-        character.setMovementSpeed(100);
-        character.setHealthPoints(100);
-        character.setAttackSpeed(1);
-        character.setMoveLeftButton("KeyEvent.VK_LEFT");
-        character.setMoveRightButton("KeyEvent.VK_RIGHT");
-        character.setAttackButton("KeyEvent.VK_SPACE");
-        character.setJumpButton("KeyEvent.VK_UP");
+        mainCharacter.setMovementSpeed(100);
+        mainCharacter.setHealthPoints(100);
+        mainCharacter.setAttackSpeed(1);
+        mainCharacter.setMoveLeftButton("KeyEvent.VK_LEFT");
+        mainCharacter.setMoveRightButton("KeyEvent.VK_RIGHT");
+        mainCharacter.setAttackButton("KeyEvent.VK_SPACE");
+        mainCharacter.setJumpButton("KeyEvent.VK_UP");
 
         PlayerCharacter character2 = PlayerCharacter.create(100, 100, 1);
         character2.setMoveLeftButton("KeyEvent.VK_LEFT");
         character2.setMoveRightButton("KeyEvent.VK_RIGHT");
         character2.setAttackButton("KeyEvent.VK_SPACE");
         character2.setJumpButton("KeyEvent.VK_UP");
-
 
         // Scenario 5
         NonPlayerCharacter npc = NonPlayerCharacter.create();
