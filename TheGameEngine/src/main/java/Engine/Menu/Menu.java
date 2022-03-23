@@ -2,13 +2,11 @@ package Engine.Menu;
 
 import Engine.Button.Button;
 import Engine.Window.Window;
-
-import java.awt.*;
 import java.util.ArrayList;
 
 public class Menu {
     private Window window;
-    ArrayList<Button> buttons;
+    ArrayList<Button> buttons = new ArrayList<>();
 
     public Menu(Window window) {
         this.window = window;
