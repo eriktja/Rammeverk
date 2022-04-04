@@ -67,6 +67,10 @@ public class Rectangle {
         this.yPos = yPos;
     }
 
+    public void setCollision(boolean collision) {
+        this.collision = collision;
+    }
+
     public RectangleAnimation getRectangleAnimation() {
         return rectangleAnimation;
     }
