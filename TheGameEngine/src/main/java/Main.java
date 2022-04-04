@@ -64,7 +64,7 @@ public class Main {
         npc.addToInventory(Weapon.create("BIG FUCKING GUN 3000", 10, 1));
 
         NonPlayerCharacter enemy = NonPlayerCharacter.
-                create(100, 100, 1, 10);
+        create(100, 100, 1, 10);
         enemy.setMovementPattern(30);
         npc.addToInventory(Weapon.create("BB-gun", 1, 1));
 
