@@ -26,7 +26,7 @@ public class Main {
         window1.setBackground("blue");
 
         // Scenario 3
-        Menu menu = new Menu(window);
+        Menu menu = new Menu(800, 600);
         Button start = new Button("center", "Start Game");
         Button quit = new Button("center","Quit");
         menu.addButton(start);

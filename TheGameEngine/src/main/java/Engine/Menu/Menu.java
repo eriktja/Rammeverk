@@ -5,11 +5,13 @@ import Engine.Window.Window;
 import java.util.ArrayList;
 
 public class Menu {
-    private Window window;
+    private int height;
+    private int width;
     ArrayList<Button> buttons = new ArrayList<>();
 
-    public Menu(Window window) {
-        this.window = window;
+    public Menu(int height, int width) {
+        this.height = height;
+        this.width = width;
     }
 
     // Ha egen klasse for button med innhold og lokasjon? overloade på typ run()/exit()?
@@ -18,6 +20,5 @@ public class Menu {
     }
 
     public void alignVertical() {
-
     }
 }
