@@ -1,9 +1,12 @@
 package Engine.Items;
 
+import Engine.Sound.Sound;
+
 public class Weapon extends Item{
 
     private int attackDamage;
     private int attackSpeed;
+    private Sound Sound;
 
     private Weapon(String name, int attackDamage, int attackSpeed) {
         super(name);
@@ -21,6 +24,14 @@ public class Weapon extends Item{
     }
     public static Weapon create(String name, int attackDamage, int attackSpeed){
         return new Weapon(name, attackDamage, attackSpeed);
+    }
+
+    public Engine.Sound.Sound getSound() {
+        return Sound;
+    }
+
+    public void setSound(Engine.Sound.Sound sound) {
+        Sound = sound;
     }
 
     public int getAttackDamage() {
