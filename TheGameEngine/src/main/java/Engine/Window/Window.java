@@ -1,6 +1,9 @@
 package Engine.Window;
 
 import Engine.Window.Animations.Sprite;
+import Engine.Window.Rectangle.Rectangle;
+
+import java.util.List;
 
 public class Window {
     // The window handler
@@ -8,6 +11,8 @@ public class Window {
     private long window;
     private int height, width;
     private String background;
+    private List<Character> characters;
+    private List<Rectangle> gameElements;
 
     private Window(int height, int width){
         this.height = height;
@@ -52,7 +57,13 @@ public class Window {
     }
 
     public void drawSprite(Sprite sprite, int x, int y){
+    }
 
+    public void addCharacter(Character character){
+        characters.add(character);
+    }
+    public void addGameElement(Rectangle rectangle){
+        gameElements.add(rectangle);
     }
 //    Code copied from LWJGL
 //    public void run() {

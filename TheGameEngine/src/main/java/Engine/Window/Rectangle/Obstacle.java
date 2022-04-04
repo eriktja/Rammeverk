@@ -1,4 +1,4 @@
-package Engine.Rectangle;
+package Engine.Window.Rectangle;
 
 public class Obstacle extends Rectangle {
     private int movementSpeedReduction;

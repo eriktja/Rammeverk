@@ -1,6 +1,5 @@
-package Engine.Rectangle;
+package Engine.Window.Rectangle;
 
-import Engine.Items.Item;
 import Engine.Window.Animations.RectangleAnimation;
 
 public class Rectangle {
