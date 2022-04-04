@@ -11,7 +11,6 @@ public class Consumable extends Item{
     }
 
     private Consumable() {
-
     }
 
     // Factory methods
