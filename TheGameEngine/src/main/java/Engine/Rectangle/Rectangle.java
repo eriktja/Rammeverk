@@ -9,13 +9,15 @@ public class Rectangle {
     private int height;
     private int width;
     private RectangleAnimation rectangleAnimation;
+    private boolean collision;
 
-    protected Rectangle(int xPos, int yPos, int height, int width)
+    protected Rectangle(int xPos, int yPos, int height, int width, boolean collision)
     {
         this.xPos = xPos;
         this.yPos = yPos;
         this.height = height;
         this.width = width;
+        this.collision = collision;
     }
 
     protected Rectangle() {}
@@ -25,8 +27,8 @@ public class Rectangle {
         return new Rectangle();
     }
 
-    public static Rectangle create(int xPos, int yPos, int height, int width){
-        return new Rectangle(xPos, yPos, height, width);
+    public static Rectangle create(int xPos, int yPos, int height, int width, boolean collision){
+        return new Rectangle(xPos, yPos, height, width, collision);
     }
 
     public int getHeight()

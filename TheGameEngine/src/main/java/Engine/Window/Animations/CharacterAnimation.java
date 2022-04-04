@@ -4,6 +4,7 @@ public class CharacterAnimation extends Animation{
     private int height;
     private int width;
 
+
     public CharacterAnimation() {
     }
 
