@@ -19,11 +19,20 @@ public class Window {
             instance = new Window();
         return instance;
     }
+
     public static Window create(int height, int width){
         if(instance == null){
             instance = new Window();
         }
         instance.setSize(height, width);
+        return instance;
+    }
+
+    public static Window createFullScreenWindow(){
+        if(instance == null){
+            instance = new Window();
+        }
+        instance.setFullscreen();
         return instance;
     }
 

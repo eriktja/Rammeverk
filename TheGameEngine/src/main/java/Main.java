@@ -19,6 +19,7 @@ public class Main {
         Window window = Window.create();
         window.setFullscreen();
         window.setBackground("Background");
+        Window win = Window.create();
 
         // Scenario 2
         Window window1 = Window.create(800, 600);
