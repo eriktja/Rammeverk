@@ -1,5 +1,7 @@
 package Engine.Window;
 
+import Engine.Window.Animations.Sprite;
+
 public class Window {
     // The window handler
     private static Window instance;
@@ -47,6 +49,10 @@ public class Window {
 
     public void setBackground(String background){
         this.background = background;
+    }
+
+    public void drawSprite(Sprite sprite, int x, int y){
+
     }
 //    Code copied from LWJGL
 //    public void run() {
