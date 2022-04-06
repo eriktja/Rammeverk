@@ -19,7 +19,7 @@ public class Rectangle {
         this.collision = collision;
     }
 
-    public Rectangle(int xPos, int yPos, int height, int width) {
+    protected Rectangle(int xPos, int yPos, int height, int width) {
         this.xPos = xPos;
         this.yPos = yPos;
         this.height = height;
@@ -36,6 +36,10 @@ public class Rectangle {
 
     public static Rectangle create(int xPos, int yPos, int height, int width, boolean collision){
         return new Rectangle(xPos, yPos, height, width, collision);
+    }
+
+    public static Rectangle create(int xPos, int yPos, int height, int width){
+        return new Rectangle(xPos, yPos, height, width);
     }
 
     public int getHeight()

@@ -13,8 +13,6 @@ import Engine.Window.Animations.CharacterAnimation;
 import Engine.Window.Animations.RectangleAnimation;
 import Engine.Window.Window;
 
-import java.awt.event.KeyEvent;
-
 public class Main {
     public static void main(String[] args) {
         // Scenario 1
@@ -104,6 +102,11 @@ public class Main {
         Obstacle lava = Obstacle.create(10, 0, 1, 5, 15, 10, 20);
         Rectangle platform = Rectangle.create(250, 100,10,10, true);
         // Scenario 12
+        Window window2 = Window.create();
+        Rectangle rec1 = Rectangle.create(0, 0, 100, 400);
+        Rectangle rec2 = Rectangle.create(450, 0, 100, 400, true);
+        window2.addGameElement(rec1);
+        window2.addGameElement(rec2);
 
         // Scenario 13
         PlayerCharacter actionMan = PlayerCharacter.create();
@@ -127,11 +130,17 @@ public class Main {
         lava.setRectangleAnimation(rectangleAnimation);
 
         // Scenario 21
-        Window fønster = Window.create();
-        Rectangle plattå = Rectangle.create(250, 100, 10, 10, true);
-        Obstacle hinder = Obstacle.create(10, 0, 1, 5, 15, 10, 20);
-        fønster.addGameElement(plattå);
-        fønster.addGameElement(hinder);
+        //Window fønster = Window.create();
+        //Rectangle plattå = Rectangle.create(250, 100, 10, 10, true);
+        //Obstacle hinder = Obstacle.create(10, 0, 1, 5, 15, 10, 20);
+        //fønster.addGameElement(plattå);
+        //fønster.addGameElement(hinder);
+
+        // Scenario 23
+        Window window3 = Window.create();
+        PlayerCharacter maincharacter = PlayerCharacter.create();
+
+        window3.setPlayer(maincharacter);
 
 
     }

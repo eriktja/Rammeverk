@@ -21,6 +21,7 @@ public class Window {
         this.height = height;
         this.width = width;
     }
+
     private Window(){
     }
 
@@ -73,6 +74,7 @@ public class Window {
     public void addNPC(NonPlayerCharacter NPC){
         NPCs.add(NPC);
     }
+
     public void addGameElement(Rectangle rectangle){
         gameElements.add(rectangle);
     }
