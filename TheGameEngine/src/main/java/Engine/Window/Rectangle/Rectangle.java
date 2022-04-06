@@ -19,6 +19,14 @@ public class Rectangle {
         this.collision = collision;
     }
 
+    public Rectangle(int xPos, int yPos, int height, int width) {
+        this.xPos = xPos;
+        this.yPos = yPos;
+        this.height = height;
+        this.width = width;
+        this.collision = true;
+    }
+
     protected Rectangle() {}
 
     // Factory methods

@@ -5,6 +5,8 @@ public class Obstacle extends Rectangle {
     private int damagePerSecond;
     private int chanceToSpawn;
 
+
+
     private Obstacle(int xPos, int yPos, int height, int width, int movementSpeedReduction, int damagePerSecond, int chanceToSpawn)
     {
         super(xPos, yPos, height, width);
