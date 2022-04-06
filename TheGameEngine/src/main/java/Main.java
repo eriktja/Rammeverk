@@ -126,6 +126,13 @@ public class Main {
         RectangleAnimation rectangleAnimation = RectangleAnimation.create("lavaImage.jpg");
         lava.setRectangleAnimation(rectangleAnimation);
 
+        // Scenario 21
+        Window fønster = Window.create();
+        Rectangle plattå = Rectangle.create(250, 100, 10, 10, true);
+        Obstacle hinder = Obstacle.create(10, 0, 1, 5, 15, 10, 20);
+        fønster.addGameElement(plattå);
+        fønster.addGameElement(hinder);
+
 
     }
 }
