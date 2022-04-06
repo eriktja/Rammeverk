@@ -63,6 +63,10 @@ public class Window {
         return player;
     }
 
+    public void addPlayer(PlayerCharacter player) {
+        setPlayer(player);
+    }
+
     public void setPlayer(PlayerCharacter player) {
         this.player = player;
     }
