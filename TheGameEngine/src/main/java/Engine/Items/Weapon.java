@@ -26,11 +26,11 @@ public class Weapon extends Item{
         return new Weapon(name, attackDamage, attackSpeed);
     }
 
-    public Engine.Sound.Sound getSound() {
+    public Sound getSound() {
         return Sound;
     }
 
-    public void setSound(Engine.Sound.Sound sound) {
+    public void setSound(Sound sound) {
         Sound = sound;
     }
 

@@ -125,5 +125,6 @@ public class Main {
         //Scenario 17
         RectangleAnimation rectangleAnimation = RectangleAnimation.create("lavaImage.jpg");
         lava.setRectangleAnimation(rectangleAnimation);
+
     }
 }
