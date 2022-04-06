@@ -126,5 +126,6 @@ public class Main {
         RectangleAnimation rectangleAnimation = RectangleAnimation.create("lavaImage.jpg");
         lava.setRectangleAnimation(rectangleAnimation);
 
+
     }
 }

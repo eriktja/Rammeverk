@@ -57,4 +57,8 @@ public class Weapon extends Item{
 
     private void equip() {
     }
+
+    public void shoot(){
+        this.getSound().play();
+    }
 }
