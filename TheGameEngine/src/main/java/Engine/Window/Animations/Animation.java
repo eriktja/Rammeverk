@@ -4,11 +4,17 @@ public class Animation {
     private String filepath;
     private String color;
 
-    public Animation() {
+    protected Animation() {
     }
 
-    public Animation(String source) {
+    protected Animation(String source, String color) {
         this.filepath = source;
+        this.color = color;
+    }
+
+    // Factory methods
+    public static Animation create(String source, String color) {
+        return new Animation(source, color);
     }
 
     public String getFilepath() {

@@ -26,9 +26,9 @@ public class Main {
         window1.setBackground("blue");
 
         // Scenario 3
-        Menu menu = new Menu(800, 600);
-        Button start = new Button("center", "Start Game");
-        Button quit = new Button("center","Quit");
+        Menu menu = Menu.create(800, 600);
+        Button start = Button.create("center", "Start Game");
+        Button quit = Button.create("center","Quit");
         menu.addButton(start);
         menu.addButton(quit);
 
@@ -108,18 +108,18 @@ public class Main {
         // Scenario 14
 
         // Scenario 15
-        CharacterAnimation playerAnimation = new CharacterAnimation("image.jpg");
+        CharacterAnimation playerAnimation = CharacterAnimation.create("image.jpg", "red", 20, 20);
         PlayerCharacter player = PlayerCharacter.create();
         player.setCharacterAnimation(playerAnimation);
 
         // Scenario 16
-        CharacterAnimation playerAnimation1 = new CharacterAnimation();
+        CharacterAnimation playerAnimation1 = CharacterAnimation.create();
         playerAnimation1.setColor("102, 255, 102");
         PlayerCharacter player1 = PlayerCharacter.create();
         player1.setCharacterAnimation(playerAnimation);
 
         //Scenario 17
-        RectangleAnimation rectangleAnimation = new RectangleAnimation("lavaImage.jpg");
+        RectangleAnimation rectangleAnimation = RectangleAnimation.create("lavaImage.jpg", "blue");
         lava.setRectangleAnimation(rectangleAnimation);
     }
 }

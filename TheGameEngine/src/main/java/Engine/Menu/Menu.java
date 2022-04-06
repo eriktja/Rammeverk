@@ -9,9 +9,13 @@ public class Menu {
     private int width;
     ArrayList<Button> buttons = new ArrayList<>();
 
-    public Menu(int height, int width) {
+    private Menu(int height, int width) {
         this.height = height;
         this.width = width;
+    }
+
+    public static Menu create(int height, int width) {
+        return new Menu(height, width);
     }
 
     // Ha egen klasse for button med innhold og lokasjon? overloade på typ run()/exit()?

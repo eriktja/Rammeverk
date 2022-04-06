@@ -5,11 +5,22 @@ public class CharacterAnimation extends Animation{
     private int width;
 
 
-    public CharacterAnimation() {
+    private CharacterAnimation() {
     }
 
-    public CharacterAnimation(String source) {
-        super(source);
+    private CharacterAnimation(String source, String color, int height, int width) {
+        super(source, color);
+        this.height = height;
+        this.width = width;
+    }
+
+    // Factory methods
+    public static CharacterAnimation create(String source, String color, int height, int width) {
+        return new CharacterAnimation(source, color, height, width);
+    }
+
+    public static CharacterAnimation create() {
+        return new CharacterAnimation();
     }
 
     public int getHeight() {

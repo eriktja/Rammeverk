@@ -4,9 +4,19 @@ public class Button {
     private String location;
     private String buttonText;
 
-    public Button(String location, String buttonText) {
+    private Button(String location, String buttonText) {
         this.location = location;
         this.buttonText = buttonText;
+    }
+
+    private Button() {}
+
+    // Factory methods
+    public static Button create(String location, String buttonText) {
+        return new Button(location, buttonText);
+    }
+    public static Button create() {
+        return new Button();
     }
 
     public String getLocation() {
