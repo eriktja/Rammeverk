@@ -2,7 +2,6 @@ package Engine.Window;
 
 import Engine.Character.NonPlayerCharacter;
 import Engine.Character.PlayerCharacter;
-import Engine.Window.Animations.Sprite;
 import Engine.Window.Rectangle.Rectangle;
 
 import java.util.List;
@@ -58,9 +57,6 @@ public class Window {
 
     public void setBackground(String background){
         this.background = background;
-    }
-
-    public void drawSprite(Sprite sprite, int x, int y){
     }
 
     public PlayerCharacter getPlayer() {
