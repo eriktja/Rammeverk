@@ -7,6 +7,10 @@ public class Animation {
     protected Animation() {
     }
 
+    public Animation(String filepath) {
+        this.filepath = filepath;
+    }
+
     protected Animation(String source, String color) {
         this.filepath = source;
         this.color = color;
@@ -15,6 +19,9 @@ public class Animation {
     // Factory methods
     public static Animation create(String source, String color) {
         return new Animation(source, color);
+    }
+    public static Animation create(String source){
+        return new Animation(source);
     }
 
     public String getFilepath() {

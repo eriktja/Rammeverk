@@ -8,6 +8,10 @@ public class CharacterAnimation extends Animation{
     private CharacterAnimation() {
     }
 
+    public CharacterAnimation(String filepath) {
+        super(filepath);
+    }
+
     private CharacterAnimation(String source, String color, int height, int width) {
         super(source, color);
         this.height = height;
@@ -17,6 +21,9 @@ public class CharacterAnimation extends Animation{
     // Factory methods
     public static CharacterAnimation create(String source, String color, int height, int width) {
         return new CharacterAnimation(source, color, height, width);
+    }
+    public static CharacterAnimation create(String source){
+        return new CharacterAnimation(source);
     }
 
     public static CharacterAnimation create() {

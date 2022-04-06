@@ -1,12 +1,12 @@
 package Engine.Character;
 
 public class PlayerCharacter extends Character{
-    public static PlayerCharacter instance = null;
-    public String moveLeft;
-    public String moveRight;
-    public String attack;
-    public String jump;
-    public String useConsumable;
+    private static PlayerCharacter instance = null;
+    private String moveLeft;
+    private String moveRight;
+    private String attack;
+    private String jump;
+    private String useConsumable;
 
     private PlayerCharacter(int movementSpeed, int healthPoints, int attackSpeed) {
         super(movementSpeed, healthPoints, attackSpeed);

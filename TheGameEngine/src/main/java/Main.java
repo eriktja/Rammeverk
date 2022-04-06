@@ -13,6 +13,8 @@ import Engine.Window.Animations.CharacterAnimation;
 import Engine.Window.Animations.RectangleAnimation;
 import Engine.Window.Window;
 
+import java.awt.event.KeyEvent;
+
 public class Main {
     public static void main(String[] args) {
         // Scenario 1
@@ -26,7 +28,7 @@ public class Main {
         window1.setBackground("blue");
 
         // Scenario 3
-        Menu menu = Menu.create(800, 600);
+        Menu menu =  Menu.create(800, 600);
         Button start = Button.create("center", "Start Game");
         Button quit = Button.create("center","Quit");
         menu.addButton(start);
@@ -104,11 +106,13 @@ public class Main {
         // Scenario 12
 
         // Scenario 13
+        PlayerCharacter actionMan = PlayerCharacter.create();
+        actionMan.setMoveLeftButton("Key_Event.VK_Left");
 
         // Scenario 14
 
         // Scenario 15
-        CharacterAnimation playerAnimation = CharacterAnimation.create("image.jpg", "red", 20, 20);
+        CharacterAnimation playerAnimation = CharacterAnimation.create("image.jpg");
         PlayerCharacter player = PlayerCharacter.create();
         player.setCharacterAnimation(playerAnimation);
 
@@ -119,7 +123,7 @@ public class Main {
         player1.setCharacterAnimation(playerAnimation);
 
         //Scenario 17
-        RectangleAnimation rectangleAnimation = RectangleAnimation.create("lavaImage.jpg", "blue");
+        RectangleAnimation rectangleAnimation = RectangleAnimation.create("lavaImage.jpg");
         lava.setRectangleAnimation(rectangleAnimation);
     }
 }
