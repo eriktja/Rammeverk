@@ -4,6 +4,10 @@ import Engine.Window.Animations.CharacterAnimation;
 
 import java.util.ArrayList;
 
+/**
+ *  Base class for PlayerCharacter and NonPlayerCharacter
+ *
+ */
 public class Character {
     private int movementSpeed;
     private int healthPoints;

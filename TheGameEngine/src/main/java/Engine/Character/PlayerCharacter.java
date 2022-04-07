@@ -1,5 +1,8 @@
 package Engine.Character;
 
+/**
+ * Used to create the player controlled character.
+ */
 public class PlayerCharacter extends Character{
     private static PlayerCharacter instance = null;
     private String moveLeft;
