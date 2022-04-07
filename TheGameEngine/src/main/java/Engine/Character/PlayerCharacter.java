@@ -21,11 +21,26 @@ public class PlayerCharacter extends Character{
 
 
     // Implementation of singleton-pattern
+
+    /**
+     * Create an instance of the PlayerCharacter class.
+     * If an instance is created earlier this will be returned
+     * @return instance of PlayerCharacter
+     */
     public static PlayerCharacter create(){
         if(PlayerCharacter.instance == null)
             PlayerCharacter.instance = new PlayerCharacter();
         return PlayerCharacter.instance;
     }
+
+    /**
+     * Create an instance of the PlayerCharacter class.
+     * If an instance is created earlier this will be returned
+     * @param movementSpeed movement speed of the character
+     * @param healthPoints amount of health points
+     * @param attackSpeed attack speed of the character
+     * @return instance of PlayerCharacter
+     */
     public static PlayerCharacter create(int movementSpeed, int healthPoints, int attackSpeed){
         if(PlayerCharacter.instance == null){
             PlayerCharacter.instance = new PlayerCharacter();
