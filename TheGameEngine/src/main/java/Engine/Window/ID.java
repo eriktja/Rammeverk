@@ -3,6 +3,7 @@ package Engine.Window;
 public enum ID {
 
     Player(),
-    BasicEnemy();
+    BasicEnemy(),
+    Trail();
 
 }
