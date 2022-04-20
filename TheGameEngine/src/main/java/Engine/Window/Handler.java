@@ -8,8 +8,8 @@ public class Handler {
     LinkedList<GameObject> objects = new LinkedList<GameObject>();
 
     public void tick(){
-        for (GameObject object : objects){
-            object.tick();
+        for (int i = 0; i < objects.size(); i++){
+            objects.get(i).tick();
         }
     }
 
