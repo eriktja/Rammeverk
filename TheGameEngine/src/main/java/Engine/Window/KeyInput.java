@@ -25,16 +25,6 @@ public class KeyInput extends KeyAdapter {
                 if(key == KeyEvent.VK_D) object.setVelX(10);
 
             }
-            if(object.getId() == ID.Enemy)
-            {
-                // Enemy key events
-                if(key == KeyEvent.VK_I) object.setVelY(-10);
-                if(key == KeyEvent.VK_K) object.setVelY(10);
-                if(key == KeyEvent.VK_J) object.setVelX(-10);
-                if(key == KeyEvent.VK_L) object.setVelX(10);
-
-            }
-
         }
     }
     @Override
@@ -47,16 +37,6 @@ public class KeyInput extends KeyAdapter {
                 if (key == KeyEvent.VK_S) object.setVelY(0);
                 if (key == KeyEvent.VK_A) object.setVelX(0);
                 if (key == KeyEvent.VK_D) object.setVelX(0);
-
-
-            }
-            if (object.getId() == ID.Enemy) {
-                // Enemy key events
-                if (key == KeyEvent.VK_I) object.setVelY(0);
-                if (key == KeyEvent.VK_K) object.setVelY(0);
-                if (key == KeyEvent.VK_J) object.setVelX(0);
-                if (key == KeyEvent.VK_L) object.setVelX(0);
-
             }
         }
     }
