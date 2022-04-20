@@ -4,9 +4,15 @@ import Engine.Character.NonPlayerCharacter;
 import Engine.Character.PlayerCharacter;
 import Engine.Window.Rectangle.Rectangle;
 
+import javax.swing.*;
+import java.awt.*;
+import java.io.Serial;
 import java.util.List;
 
-public class Window {
+
+public class Window extends Canvas {
+    @Serial
+    private static final long serialVersionUID = 6376535401574934733L;
     // The window handler
     private static Window instance;
     private long window;
@@ -19,6 +25,19 @@ public class Window {
     private Window(int height, int width){
         this.height = height;
         this.width = width;
+    }
+    public Window(int width, int height, String title, Game game){
+        JFrame frame = new JFrame(title);
+
+        frame.setPreferredSize(new Dimension(width, height));
+        frame.setMaximumSize(new Dimension(width, height));
+        frame.setMinimumSize(new Dimension(width, height));
+
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setResizable(false);
+        frame.add(game);
+        frame.setVisible(true);
+        game.start();
     }
 
     private Window(){
