@@ -3,6 +3,7 @@ package Engine.Window;
 import java.awt.*;
 import java.awt.image.BufferStrategy;
 import java.io.Serial;
+import java.util.Random;
 
 public class Game extends Canvas implements Runnable{
     @Serial
@@ -13,13 +14,17 @@ public class Game extends Canvas implements Runnable{
     private Thread thread;
     private boolean running = false;
     private Handler handler;
+    private Random r;
 
     public Game() {
-        new Window(width, height, "hello", this);
-
         handler = new Handler();
-        handler.addObject(new Player(100,100,ID.Player));
-        handler.addObject(new Player(200,100,ID.Player));
+        this.addKeyListener(new KeyInput(handler));
+
+        new Window(width, height, "hello", this);
+        r = new Random();
+
+        handler.addObject(new Player(r.nextInt(width), r.nextInt(height), ID.Player));
+        handler.addObject(new Player(r.nextInt(width), r.nextInt(height), ID.Enemy));
 
     }
 
@@ -61,7 +66,7 @@ public class Game extends Canvas implements Runnable{
 
             if(System.currentTimeMillis() - timer > 1000){
                 timer = System.currentTimeMillis();
-                System.out.println("FPS " + frames);
+                //System.out.println("FPS " + frames);
                 frames = 0;
             }
         }

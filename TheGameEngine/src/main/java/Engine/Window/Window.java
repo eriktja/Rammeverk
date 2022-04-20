@@ -4,8 +4,9 @@ import Engine.Character.NonPlayerCharacter;
 import Engine.Character.PlayerCharacter;
 import Engine.Window.Rectangle.Rectangle;
 
-import javax.swing.*;
-import java.awt.*;
+import javax.swing.JFrame;
+import java.awt.Dimension;
+import java.awt.Canvas;
 import java.io.Serial;
 import java.util.List;
 
